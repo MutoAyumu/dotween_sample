@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
@@ -18,7 +16,6 @@ public class Sample1 : MonoBehaviour
     bool _playOnAwake;
 
     CanvasGroup _canvasGroup;
-    Sequence _sequence;
     Transform _thisTransform;
 
     private void Awake()
@@ -28,16 +25,21 @@ public class Sample1 : MonoBehaviour
     }
     private void Start()
     {
-        if(_playOnAwake)
-            SampleAnimation();    
+        if (_playOnAwake)
+            SampleAnimation();
     }
 
     public void SampleAnimation()
     {
-        _canvasGroup.alpha = 0;
-        _thisTransform.localScale = Vector3.zero;
-
-        _sequence.Append(_canvasGroup.DOFade(1f, _animTime).SetEase(_fadeEase))
-                 .Join(_thisTransform.DOScale(Vector3.one, _animTime).SetEase(_scaleEase));
+        //•¡”‚Ìˆ—‚ð‚Ü‚Æ‚ß‚ÄÄ¶‚·‚é
+        DOTween.Sequence()
+            .Append(_canvasGroup.DOFade(1f, _animTime).SetEase(_fadeEase))
+            .Join(_thisTransform.DOScale(Vector3.one, _animTime).SetEase(_scaleEase))
+            //‰Šú‰»
+            .OnStart(() =>
+            {
+                _canvasGroup.alpha = 0;
+                _thisTransform.localScale = Vector3.zero;
+            });
     }
 }
