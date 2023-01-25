@@ -21,16 +21,20 @@ public class WindowAnimation2 : MonoBehaviour
         {
             var t = _rootPanel.transform;
             var pos = _pos[0].position;
-            var param = new TweenParams();
-            param.SetEase(_ease);
+            var v = 0;
 
             if(_isPlayed)
             {
+                v = 300;
                 pos = _pos[1].position;
             }
 
             DOTween.Sequence()
-                .Append(t.DOMove(pos, _animSpeed).SetAs(param));
+                .Append(t.DOMove(pos, _animSpeed)
+                    .SetEase(_ease))
+                .Join(DOVirtual.Float(_layoutGroup.spacing, v, _animSpeed, value => _layoutGroup.spacing = value)
+                    .SetEase(_ease)
+                    .SetDelay(_animSpeed / 3));
 
             _isPlayed = !_isPlayed;
         }

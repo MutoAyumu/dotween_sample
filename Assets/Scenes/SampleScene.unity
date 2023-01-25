@@ -376,6 +376,58 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 755066368328064829, guid: 07c8e8df467d75041921d48c41ee1e15, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755066368328064829, guid: 07c8e8df467d75041921d48c41ee1e15, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755066368328064829, guid: 07c8e8df467d75041921d48c41ee1e15, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755066368328064829, guid: 07c8e8df467d75041921d48c41ee1e15, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755066368415390096, guid: 07c8e8df467d75041921d48c41ee1e15, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755066368415390096, guid: 07c8e8df467d75041921d48c41ee1e15, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755066368415390096, guid: 07c8e8df467d75041921d48c41ee1e15, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755066368415390096, guid: 07c8e8df467d75041921d48c41ee1e15, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755066368539760042, guid: 07c8e8df467d75041921d48c41ee1e15, type: 3}
+      propertyPath: m_Spacing
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 755066369852862896, guid: 07c8e8df467d75041921d48c41ee1e15, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755066369852862896, guid: 07c8e8df467d75041921d48c41ee1e15, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755066369852862896, guid: 07c8e8df467d75041921d48c41ee1e15, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 755066369852862896, guid: 07c8e8df467d75041921d48c41ee1e15, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1949541731005502052, guid: 07c8e8df467d75041921d48c41ee1e15, type: 3}
       propertyPath: m_Name
       value: WindowAnimation2
