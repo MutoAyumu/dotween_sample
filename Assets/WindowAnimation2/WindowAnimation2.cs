@@ -8,7 +8,7 @@ public class WindowAnimation2 : MonoBehaviour
 {
     [SerializeField] CanvasGroup _rootPanel;
     [SerializeField] VerticalLayoutGroup _layoutGroup;
-    [SerializeField] float _startPosY = 0;
+    [SerializeField] Transform[] _pos = new Transform[2];
     [Space(10)]
     [SerializeField] float _animSpeed = 0.3f;
     [SerializeField] Ease _ease = Ease.Linear;
@@ -20,27 +20,17 @@ public class WindowAnimation2 : MonoBehaviour
         if(_rootPanel && _layoutGroup)
         {
             var t = _rootPanel.transform;
-            var startPosY = _startPosY;
-            var endPosY = t.position.y;
+            var pos = _pos[0].position;
             var param = new TweenParams();
             param.SetEase(_ease);
-            var s = 300;
-            var e = 0;
 
             if(_isPlayed)
             {
-                var tmp1 = s;
-                s = e;
-                e = tmp1;
-                var tmp2 = startPosY;
-                startPosY = endPosY;
-                endPosY = tmp2;
+                pos = _pos[1].position;
             }
 
             DOTween.Sequence()
-                .Append(t.DOMoveY(_startPosY, 0))
-                .Append(t.DOMoveY(endPosY, _animSpeed).SetAs(param))
-                .Join(DOVirtual.Float(s, e, _animSpeed, t => _layoutGroup.spacing = t).SetAs(param));
+                .Append(t.DOMove(pos, _animSpeed).SetAs(param));
 
             _isPlayed = !_isPlayed;
         }
