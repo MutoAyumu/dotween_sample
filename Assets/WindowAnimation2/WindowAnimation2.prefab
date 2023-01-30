@@ -208,8 +208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e38c16dbe88b7f441873adb63a0d43ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animSpeed: 0.2
-  _ease: 28
+  _animSpeed: 0.15
+  _ease: 27
 --- !u!1 &755066368415390099
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,8 +300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e38c16dbe88b7f441873adb63a0d43ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animSpeed: 0.2
-  _ease: 28
+  _animSpeed: 0.15
+  _ease: 27
 --- !u!1 &755066368539760045
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,7 +360,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 1
-  m_Spacing: 0
+  m_Spacing: 300
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
@@ -636,7 +636,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 755066369298846631}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -969,8 +969,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e38c16dbe88b7f441873adb63a0d43ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animSpeed: 0.2
-  _ease: 28
+  _animSpeed: 0.15
+  _ease: 27
 --- !u!1 &755066370107007347
 GameObject:
   m_ObjectHideFlags: 0
